@@ -2,7 +2,7 @@
 
 Database : Mongodb
 
-# Register
+**Register**
 
 * url : /register 
 * method : POST 
