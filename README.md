@@ -4,67 +4,67 @@ Database : Mongodb
 
 # Register
 
-url : /register 
-method : POST 
-request body : Form Urlencoded { name, email, password }
+* url : /register 
+* method : POST 
+* request body : Form Urlencoded { name, email, password }
 
-# Login
+**Login**
 
-url : /login 
-method : POST 
-request body : Form Urlencoded { email, password } 
-desc : you will get a token after login
+* url : /login 
+* method : POST 
+* request body : Form Urlencoded { email, password } 
+* desc : you will get a token after login
 
-# Get All Planning
+**Get All Planning**
 
-url : /planning 
-method : get 
+* url : /planning 
+* method : get 
 
-# Create Planning
+**Create Planning**
 
-url : /planning 
-method : POST 
-request body : Form Urlencoded { title, activity }
+* url : /planning 
+* method : POST 
+* request body : Form Urlencoded { title, activity }
 
-# Update Planning to Todo
+**Update Planning to Todo**
 
-url : /planning/:id 
-method : PUT 
-request header : token 
-desc : use your token
+* url : /planning/:id 
+* method : PUT 
+* request header : token 
+* desc : use your token
 
-# Get All Todo
+**Get All Todo**
 
-url : /todo 
-method : get 
+* url : /todo 
+* method : get 
 
-# Update Todo to Doing
+**Update Todo to Doing**
 
-url : /todo/:id 
-method : PUT 
-request header : token 
-desc : use your token
+* url : /todo/:id 
+* method : PUT 
+* request header : token 
+* desc : use your token
 
-# Get All Doing
+**Get All Doing**
 
-url : /doing 
-method : get 
+* url : /doing 
+* method : get 
 
-# Update Doing to Done
+**Update Doing to Done**
 
-url : /doing/:id 
-method : PUT 
-request header : token 
-desc : use your token
+* url : /doing/:id 
+* method : PUT 
+* request header : token 
+* desc : use your token
 
-# Get All Done
+**Get All Done**
 
-url : /done 
-method : get 
+* url : /done 
+* method : get 
 
-# Delete Todo
+**Delete Todo**
 
-url : /delete/:id 
-method : DELETE 
-request header : token 
-desc : use your token
+* url : /delete/:id 
+* method : DELETE 
+* request header : token 
+* desc : use your token
