@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentation API Todo-Noval</title>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDRbSk1RhtrENNsY6l5qc0cFTzkHo_6z_I",
+        authDomain: "todo-noval.firebaseapp.com",
+        databaseURL: "https://todo-noval.firebaseio.com",
+        projectId: "todo-noval",
+        storageBucket: "",
+        messagingSenderId: "572374024698"
+    };
+    firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <h2>Documentation API Todo-Noval</h2>
+    <b><p>Register</p></b>
+    <p>url : /register <br>
+    method : POST <br>
+    request body : Form Urlencoded { name, email, password }</p>
+
+    <b><p>Login</p></b>
+    <p>url : /login <br>
+    method : POST <br>
+    request body : Form Urlencoded { email, password } <br>
+    desc : you will get a token after login</p>
+
+    <b><p>Get All Planning</p></b>
+    <p>url : /planning <br>
+    method : get <br></p>
+
+    <b><p>Create Planning</p></b>
+    <p>url : /planning <br>
+    method : POST <br>
+    request body : Form Urlencoded { title, activity }</p>
+
+    <b><p>Update Planning to Todo</p></b>
+    <p>url : /planning/:id <br>
+    method : PUT <br>
+    request header : token <br>
+    desc : use your token</p>
+
+    <b><p>Get All Todo</p></b>
+    <p>url : /todo <br>
+    method : get <br></p>
+
+    <b><p>Update Todo to Doing</p></b>
+    <p>url : /todo/:id <br>
+    method : PUT <br>
+    request header : token <br>
+    desc : use your token</p>
+
+    <b><p>Get All Doing</p></b>
+    <p>url : /doing <br>
+    method : get <br></p>
+
+    <b><p>Update Doing to Done</p></b>
+    <p>url : /doing/:id <br>
+    method : PUT <br>
+    request header : token <br>
+    desc : use your token</p>
+
+    <b><p>Get All Done</p></b>
+    <p>url : /done <br>
+    method : get <br></p>
+
+    <b><p>Delete Todo</p></b>
+    <p>url : /delete/:id <br>
+    method : DELETE <br>
+    request header : token <br>
+    desc : use your token</p>
+</body>
+</html>
